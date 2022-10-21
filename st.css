@@ -1,0 +1,44 @@
+body{
+    padding: 10px 50px;
+    /* background-color:rgb(234, 234, 239); */
+}
+.formstyle input{
+    padding: 5px 10px;
+    border: 1px solid blue;
+    margin: 10px;
+    border-radius: 5px;
+}
+.formerror{
+    color: red;
+}
+#nameinput,#passinput{
+    width: 100px;
+}
+.dropsize{
+    padding: 50px;
+}
+#sex{
+    width:auto;
+    padding: 0px;
+    margin: 1px;
+}
+textarea{
+    resize: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.button{
+    border-radius: 5px;
+    width: 80px;
+    height: 25px;
+    font-size: 20px;
+    margin: 22px 120px;
+}
+input[type="Submit"]{
+    padding: 12px 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+    margin: 15px 130px;
+}
