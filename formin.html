@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="/" name="myForm" onsubmit="return validateForm()" method="post">
+        <table>
+            <tr>
+                <td>User id:</td>
+                <td>
+                    <div class="formstyle" id="userid">
+                        <input type="text" name="formuserid" id="nameinput" required><b><span class="formerror"></span></b>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td>
+
+                    <div class="formstyle" id="password">
+                        <input type="password" name="formpassword" id="passinput" required><b><span class="formerror"></span></b>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+            <td>Name:</td>
+            <td><div class="formstyle" id="name">
+                <input type="text" name="fname" required><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Address:</td>
+            <td><div class="formstyle" id="address">
+                <input type="text" name="formaddress"><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Country:</td>
+            <td><div class="formstyle" id="country">
+                <label for="country"></label>
+                <select name="country" id="country">
+                    <option value="(Please choose a country)">(Please choose a country)</option>
+                    <option value="India" class="dropsize">India</option>
+                    <option value="NIGERIA" class="dropsize">Germany</option>
+                    
+                </select>
+                <b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Zip Code: </td>
+            <td><div class="formstyle" id="zipcode">
+                <input type="number" name="formzipcode" required><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Email: </td>
+            <td><div class="formstyle" id="email">
+                <input type="email" name="formemail" required><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td>Sex:</td>
+            <td><div class="formstyle" id="sex">
+                <input type="radio" name="formsex" id="male">Male <input type="radio" name="formsex" id="female">Female<b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+
+        <tr>
+            <td>Language</td>
+            <td><label><div class="formstyle" id="language">
+                <input type="radio" name="formlanguage" id="english">English <input type="radio" name="formlanguage" id="non-english">Non-English<b><span class="formerror"></span></b>
+            </div></label></td>
+        </tr>
+
+        <tr>
+            <td>About: </td>
+            <td><div class="formstyle" id="about">
+                <textarea name="formabout" id="" cols="30" rows="10"></textarea><b><span class="formerror"></span></b>
+            </div></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align:center;"><input type="submit" value="Submit"></td>
+        </tr>
+    </form>
+    <script src="sss.js"></script>
+</body>
+</html>
